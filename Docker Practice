@@ -28,3 +28,14 @@
    32  docker run -it --name cont8 --mount source=volume1,target=/volume4 ubuntu
    33  history
 =======================================================================================
+Dockerfile New Method
+ 50  vim Dockerfile
+   51  docker build -t myimage .
+   52  docker run -it --name cont1 myimage /bin/bash
+   53  docker run -it --name cont2 myimage /bin/bash
+   54  docker run -it --name cont3 --privileged=true --volumes-from cont2 ubuntu /bin/bash
+   55  docker attach cont2
+   56  docker run -it --name cont4 --privileged=true --volumes-from cont3 ubuntu /bin/bash
+   57  docker ps -a
+   58  docker attach cont3
+   59  docker attach cont2
