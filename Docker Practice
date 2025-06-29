@@ -17,3 +17,14 @@
    20  docker ps -a
    21  history
 ===================================================================
+24  docker volume create volume1
+   25  docker volume ls
+   26  docker volume inspect volume1
+   27  cd /var/lib/docker/volumes/volume1/_data
+   28  mkdir dir1
+   29  cd
+   30  docker run -it --name cont8 --mount source=volume1 destination=volume5 ubuntu
+   31  docker run -it --name cont8 --mount source=volume1 destination=volume1 ubuntu
+   32  docker run -it --name cont8 --mount source=volume1,target=/volume4 ubuntu
+   33  history
+=======================================================================================
