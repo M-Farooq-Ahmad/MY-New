@@ -8,4 +8,12 @@
     8  docker pull amazonlinux .
     9  docker rum -it --name cont2 amazonlinux
    10  history
-==================================================================================================
+===================================================================
+   15  vim Dockerfile
+   16  docker build -t amazonlinux .
+   17  docker run -it --name cont9 amazonlinux
+   18  docker ps -a
+   19  docker rm -f $(docker ps -a)
+   20  docker ps -a
+   21  history
+===================================================================
