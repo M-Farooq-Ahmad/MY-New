@@ -1,1 +1,11 @@
-
+1  hostnamectl set-hostname Farooq
+    2  bash
+    3  yum install -y docker
+    4  systemctl start docker
+    5  systemctl enable docker
+    6  systemctl status docker
+    7  docker pull amazonlinux
+    8  docker pull amazonlinux .
+    9  docker rum -it --name cont2 amazonlinux
+   10  history
+==================================================================================================
