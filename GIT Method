@@ -1,0 +1,10 @@
+Complete method step-step to push codes to GitHub
+mkdir farooq
+ cd farooq/
+ git init
+ vim code.txt
+ git add code.txt
+ git commit -m "Writw Code" code.txt
+ git branch -m train
+ git remote add origin https://github.com/M-Farooq-Ahmad/Linux-Practice.git
+ git push origin -u train
